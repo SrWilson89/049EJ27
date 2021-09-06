@@ -99,17 +99,6 @@ function cargaDatos(){
     if (localStorage.getItem('MysTikets')){
         misProductos=JSON.parse(localStorage.getItem('MysTikets'));
         
-        for (var x = 0; x < miArray.length; x++) {
-            misProductos.push(new Producto(
-                misProductos[x].foto,
-                misProductos[x].titulo,
-                misProductos[x].precioA,
-                misProductos[x].precioF,
-                misProductos[x].descuento,
-                misProductos[x].cantidad,
-                misProductos[x].detalle
-            ))
-        }
         pintar();
     }
 }
